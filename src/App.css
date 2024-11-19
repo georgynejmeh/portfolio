@@ -1,0 +1,205 @@
+.text-accent {
+  color: var(--primary-color);
+}
+
+.text-animation {
+  opacity: 0;
+  display: inline-block;
+  transform-origin: left;
+  animation: cover 1500ms forwards 1000ms, uncover 1500ms forwards 2500ms;
+}
+
+.text-cover-animation {
+  opacity: 1;
+  display: inline-block;
+  transform-origin: left;
+  animation: uncover 1500ms forwards 2500ms;
+}
+
+@keyframes cover {
+  from {
+    opacity: 1;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes uncover {
+  from {
+    opacity: 1;
+    transform-origin: right;
+    transform: scaleX(1);
+  }
+  to {
+    opacity: 1;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fade 3000ms forwards 1000ms;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+.button::before,
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7d8082;
+  transition: all 0.15s ease;
+}
+.button::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+.button::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+.button:active,
+.button:focus {
+  outline: none;
+}
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
+}
+.button:active::before {
+  top: 3px;
+}
+.button:active::after {
+  bottom: 3px;
+}
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+.button_lg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+.button_lg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all 700ms ease;
+}
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: var(--primary-color);
+  transform: skew(-15deg);
+  transition: all 700ms ease;
+}
+.button_text {
+  position: relative;
+}
+.button:hover {
+  color: #0f1923;
+}
+.button:hover .button_sl {
+  width: calc(100% + 15px);
+}
+.button:hover .button_lg::after {
+  background-color: #fff;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-primary {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--primary-color);
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+.btn-primary:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid var(--primary-color);
+  transform: scale(1.2, 1.2);
+}
+.btn-primary:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
