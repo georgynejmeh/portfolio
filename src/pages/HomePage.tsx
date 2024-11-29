@@ -9,14 +9,38 @@ import TextAnimate from "../components/TextAnimate";
 import ContactSection from "../sections/ContactSection";
 import DetailsSection from "../sections/DetailsSection";
 import { projects } from "../assets/projects";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
+  const [gidLoaded, setGifLoaded] = useState(false);
+
+  useEffect(() => {
+    const loadImage = (image: { url: string }) => {
+      return new Promise((resolve, reject) => {
+        const loadImg = new Image();
+        loadImg.src = image.url;
+        loadImg.onload = () => resolve(image.url);
+        loadImg.onerror = (err) => reject(err);
+      });
+    };
+
+    const imagesToLoad = [{ url: gif }];
+
+    Promise.all(imagesToLoad.map((image) => loadImage(image)))
+      .then(() => setGifLoaded(true))
+      .catch((err) => console.log("Failed to load images", err));
+  }, []);
+
+  if (!gidLoaded) {
+    return null;
+  }
   return (
     <main>
       {/* -- SECTION -- */}
 
       <section className="flex items-center max-lg:flex-col">
         <img className="fade w-1/2 max-lg:w-full" src={gif} />
+
         <div className="w-full flex flex-col justify-center items-center max-lg:text-center">
           <TextReveal>
             <h1 className="font-bold">GEORGY NEJMEH</h1>
