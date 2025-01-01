@@ -19,7 +19,7 @@ export const projects = [
     details: "Based in Arab Gulf",
     img01: shattibImg01,
     img02: shattibImg02,
-    url: "https://shattib-reactjs-no-http.vercel.app/",
+    url: "https://www.shatib.com",
     images: [
       shattibDetailsImg01,
       shattibDetailsImg02,
