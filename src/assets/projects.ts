@@ -14,12 +14,12 @@ import pharmacyImg02 from "/projects/pharmacy/image02.png";
 
 export const projects = [
   {
-    title: '"SHATTIB"',
+    title: '"SHATTIB" (shatib.com)',
     desc: "Construction Material E-Commerce",
     details: "Based in Arab Gulf",
     img01: shattibImg01,
     img02: shattibImg02,
-    url: "https://www.shatib.com",
+    url: "https://shattib-reactjs-no-http.vercel.app/",
     images: [
       shattibDetailsImg01,
       shattibDetailsImg02,
