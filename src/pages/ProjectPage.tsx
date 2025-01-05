@@ -28,7 +28,7 @@ const ProjectPage = () => {
                 <button
                   className={`flex items-center justify-center mt-8 btn btn-primary max-lg:max-w-32`}
                 >
-                  URL
+                  Try it
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

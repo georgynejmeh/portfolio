@@ -11,6 +11,8 @@ import saveTheDateImg01 from "/projects/save-the-date/image01.png";
 import saveTheDateImg02 from "/projects/save-the-date/image02.png";
 import pharmacyImg01 from "/projects/pharmacy/image01.png";
 import pharmacyImg02 from "/projects/pharmacy/image02.png";
+import feelingsJournalImg01 from "/projects/feelings-journal/image01.png";
+import feelingsJournalImg02 from "/projects/feelings-journal/image02.png";
 
 export const projects = [
   {
@@ -29,6 +31,14 @@ export const projects = [
       shattibDetailsImg06,
       shattibDetailsImg07,
     ],
+  },
+  {
+    title: "Feelings Journal",
+    desc: "Years Journal of Your Emotions",
+    details: "Small Project",
+    img01: feelingsJournalImg01,
+    img02: feelingsJournalImg02,
+    url: "http://feelings-journal-black.vercel.app/",
   },
   {
     title: "SAVE THE DATE",
