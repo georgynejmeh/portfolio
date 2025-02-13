@@ -13,6 +13,20 @@ import pharmacyImg01 from "/projects/pharmacy/image01.png";
 import pharmacyImg02 from "/projects/pharmacy/image02.png";
 import feelingsJournalImg01 from "/projects/feelings-journal/image01.png";
 import feelingsJournalImg02 from "/projects/feelings-journal/image02.png";
+import arzImg01 from "/projects/arz/image01.png";
+import arzImg02 from "/projects/arz/image02.png";
+import arzDetailsImg01 from "/projects/arz/details/image01.png";
+import arzDetailsImg02 from "/projects/arz/details/image02.png";
+import arzDetailsImg03 from "/projects/arz/details/image03.png";
+import arzDetailsImg04 from "/projects/arz/details/image04.png";
+import arzDetailsImg05 from "/projects/arz/details/image05.png";
+import arzDetailsImg06 from "/projects/arz/details/image06.png";
+import arzDetailsImg07 from "/projects/arz/details/image07.png";
+import arzDetailsImg08 from "/projects/arz/details/image08.png";
+import arzDetailsImg09 from "/projects/arz/details/image09.png";
+import arzDetailsImg10 from "/projects/arz/details/image10.png";
+import arzDetailsImg11 from "/projects/arz/details/image11.png";
+import arzDetailsImg12 from "/projects/arz/details/image12.png";
 
 export const projects = [
   {
@@ -30,6 +44,28 @@ export const projects = [
       shattibDetailsImg05,
       shattibDetailsImg06,
       shattibDetailsImg07,
+    ],
+  },
+  {
+    title: '"ARZ"',
+    desc: "Company Landing Page (Portfolio)",
+    details: "React Project",
+    img01: arzImg01,
+    img02: arzImg02,
+    url: "https://arz.vercel.app/",
+    images: [
+      arzDetailsImg01,
+      arzDetailsImg02,
+      arzDetailsImg03,
+      arzDetailsImg04,
+      arzDetailsImg05,
+      arzDetailsImg06,
+      arzDetailsImg07,
+      arzDetailsImg08,
+      arzDetailsImg09,
+      arzDetailsImg10,
+      arzDetailsImg11,
+      arzDetailsImg12,
     ],
   },
   {
