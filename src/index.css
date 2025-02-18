@@ -9,6 +9,7 @@ html {
 
 :root {
   --primary-color: #00b2df;
+  --background-color: #003140;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,7 +24,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #003140;
+  background-color: var(--background-color);
 }
 
 a {

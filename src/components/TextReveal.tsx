@@ -27,11 +27,11 @@ const TextReveal = ({ children, delay = 0 }: Props) => {
   return (
     <div className="relative flex items-center py-1 m-1">
       {/* THEME: bg-stone-800 = background color V */}
-      <div className="h-full absolute bg-sky-950 text-cover-animation overflow-hidden">
+      <div className="h-full absolute bg-[var(--background-color)] text-cover-animation overflow-hidden">
         <span className="opacity-0">{children}</span>
       </div>
       {/* THEME: bg-cyan-400 = primary/accent color V */}
-      <div className="h-full absolute bg-cyan-500 text-animation overflow-hidden">
+      <div className="h-full absolute bg-[var(--primary-color)] text-animation overflow-hidden">
         <span className="opacity-0">{children}</span>
       </div>
       <span>{children}</span>
