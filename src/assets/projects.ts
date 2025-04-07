@@ -27,6 +27,16 @@ import arzDetailsImg09 from "/projects/arz/details/image09.png";
 import arzDetailsImg10 from "/projects/arz/details/image10.png";
 import arzDetailsImg11 from "/projects/arz/details/image11.png";
 import arzDetailsImg12 from "/projects/arz/details/image12.png";
+import pcaImg01 from "/projects/pca/image01.png";
+import pcaImg02 from "/projects/pca/image02.png";
+import pcaDetailsImg01 from "/projects/pca/details/image01.png";
+import pcaDetailsImg02 from "/projects/pca/details/image02.png";
+import pcaDetailsImg03 from "/projects/pca/details/image03.png";
+import pcaDetailsImg04 from "/projects/pca/details/image04.png";
+import pcaDetailsImg05 from "/projects/pca/details/image05.png";
+import pcaDetailsImg06 from "/projects/pca/details/image06.png";
+import pcaDetailsImg07 from "/projects/pca/details/image07.png";
+import pcaDetailsImg08 from "/projects/pca/details/image08.png";
 
 export const projects = [
   {
@@ -44,6 +54,24 @@ export const projects = [
       shattibDetailsImg05,
       shattibDetailsImg06,
       shattibDetailsImg07,
+    ],
+  },
+  {
+    title: '"PCA"',
+    desc: "Company Landing Page (Portfolio)",
+    details: "Based in Arab Gulf",
+    img01: pcaImg01,
+    img02: pcaImg02,
+    url: "https://pca-seven.vercel.app/",
+    images: [
+      pcaDetailsImg01,
+      pcaDetailsImg02,
+      pcaDetailsImg03,
+      pcaDetailsImg04,
+      pcaDetailsImg05,
+      pcaDetailsImg06,
+      pcaDetailsImg07,
+      pcaDetailsImg08,
     ],
   },
   {
