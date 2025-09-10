@@ -71,7 +71,7 @@ const HomePage = () => {
 
         {/* -- PROJECTS SECTION -- */}
 
-        <section id="projects">
+        <section id="projects" className="overflow-x-hidden">
           {projects.map((project, index) => (
             <ProjectSection
               reverse={index % 2 !== 0}
