@@ -74,7 +74,7 @@ const HomePage = () => {
         <section id="projects" className="overflow-x-hidden">
           {projects.map((project, index) => (
             <ProjectSection
-              reverse={index % 2 !== 0}
+              reverse={false} // {index % 2 !== 0}
               key={index}
               id={index}
               title={project.title}
